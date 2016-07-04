@@ -64,14 +64,20 @@ $RECYCLE.BIN/
 
 # Eclipse or other IDE specific files
 *.idea
+.idea/
 *.myeclipse
+.myeclipse/
 *.mymetadata
+.mymetadata/
 *.metadata
+.metadata/
 *.classpath
-*.myeclipse
-*.mymetadata
+.classpath/
+
 *.project
+.project/
 *.settings
+.settings/
 *.mf
 
 # ignoring a folder
