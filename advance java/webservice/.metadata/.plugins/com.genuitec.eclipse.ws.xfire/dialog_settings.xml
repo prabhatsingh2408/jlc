@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="webServiceWizard">
+		<item value="false" key="WSDL_FILE_USED"/>
+		<list key="WSDL_URL_KEY">
+			<item value="http://prabhatpc:5555/Lab2/AccountServicePort?wsdl"/>
+			<item value="http://prabhatpc:5555/Lab22/AccountServicePort?wsdl"/>
+			<item value="http://www.webservicex.net/StockQuote.asmx?wsdl"/>
+			<item value="http://www.webservicex.net/stockqoute.asmx?wsdl"/>
+			<item value="http://localhost:5555/Lab22/AccountServicePort?wsdl"/>
+		</list>
+	</section>
+</section>

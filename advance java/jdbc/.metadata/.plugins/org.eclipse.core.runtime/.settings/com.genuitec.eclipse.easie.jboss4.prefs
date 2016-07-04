@@ -1,0 +1,8 @@
+ENDORSED_DIRS="C\:\\various\\Student DVD\\Student DVD\\jboss-4.2.2.GA\\lib\\endorsed"
+JBOSS_HOME=C\:\\various\\Student DVD\\Student DVD\\jboss-4.2.2.GA
+JDK_HOME=C\:\\Program Files (x86)\\Java\\jdk1.7.0_25
+LIBRARY_PATH="C\:\\Program Files (x86)\\Java\\jdk1.7.0_25\\bin"
+SERVER_ENABLEMENT=true
+SERVER_STARTUP_ARG=-c default
+START_IS_DEBUG=false
+eclipse.preferences.version=1

@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+myeclipseTomcatServer.Lab2.IEARProjectName=
+myeclipseTomcatServer.Lab2.altContextRoot=/Lab2
+myeclipseTomcatServer.Lab2.contextRoot=/Lab2
+myeclipseTomcatServer.Lab2.deployIsOverProject=false
+myeclipseTomcatServer.Lab2.deploymentPath=D\:\\jlc\\advance java\\webservice\\.metadata\\.me_tcat\\webapps\\Lab2
+myeclipseTomcatServer.Lab2.isDeployed=true
+myeclipseTomcatServer.Lab2.isExploded=true
+myeclipseTomcatServer.Lab2.isUptoDate=true
+myeclipseTomcatServer.Lab2.noFileCopy=false
+myeclipseTomcatServer.Lab2.shouldBackup=false
+myeclipseTomcatServer.Lab2.shouldOverwrite=false
+myeclipseTomcatServer.Lab2.type=WebDeployment

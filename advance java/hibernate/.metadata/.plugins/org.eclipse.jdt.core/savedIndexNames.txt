@@ -1,0 +1,22 @@
+INDEX VERSION 1.126+D:\jlc\advance java\hibernate\.metadata\.plugins\org.eclipse.jdt.core
+147281095.index
+2750965759.index
+1281376111.index
+1259207542.index
+2761270246.index
+2143315025.index
+2768476762.index
+3180237479.index
+3573503849.index
+1033695836.index
+612877085.index
+1251721930.index
+3549598576.index
+2725142083.index
+996610041.index
+1400959883.index
+3398017585.index
+1007340512.index
+3580456661.index
+3705611006.index
+2883064424.index

@@ -1,0 +1,30 @@
+<!ELEMENT web-app (display-name?,description?,context-param*,
+                   filter*,filter-mapping*,listner*,
+                   servlet*,servlet-mapping*,
+                   session-config?,welcome-file-list?)>
+
+<!ELEMENT context-param (param-name,param-value)>
+<!ELEMENT filter (filter-name,filter-class,init-param*)>
+<!ELEMENT filter-mapping (filter-name,(url-pattern | servlet-name))>
+<!ELEMENT init-param (param-name,param-value)>
+<!ELEMENT servlet (servlet-name,servlet-class,init-param*,load-on-startup?)>
+<!ELEMENT servlet-mapping (servlet-name,url-pattern)>
+<!ELEMENT listner (listner-class)>
+<!ELEMENT session-config (session-timeout?)>
+<!ELEMENT welcome-file-list (welcome-file+)>
+
+<!ELEMENT display-name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT param-name (#PCDATA)>
+<!ELEMENT param-value (#PCDATA)>
+<!ELEMENT filter-name (#PCDATA)>
+<!ELEMENT filter-class (#PCDATA)>
+<!ELEMENT url-pattern (#PCDATA)>
+<!ELEMENT servlet-name (#PCDATA)>
+<!ELEMENT servlet-class (#PCDATA)>
+<!ELEMENT load-on-startup (#PCDATA)>
+<!ELEMENT listner-class (#PCDATA)>
+<!ELEMENT session-timeout (#PCDATA)>
+<!ELEMENT welcome-file (#PCDATA)>
+
+<!ENTITY jlc "JAVA LEARNING CENTER">

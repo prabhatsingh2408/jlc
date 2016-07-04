@@ -1,0 +1,50 @@
+\
+
+
+
+
+
+
+
+
+
+
+
+
+
+ackage com.jlcindia.jdbc;
+import java.sql.*;
+import java.util.*;
+import com.jlcindia.jdbc.util.*;
+public class Lab15 {
+	public static void main(String[] args) {
+		Connection con=null;
+		CallableStatement cs=null;
+		try{
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter id");
+			int id=sc.nextInt();
+			//con=JDBCUtil.getOracleConnection();
+			con=JDBCUtil.getMySQLConnection();
+			String sql="{call p1(?,?,?,?,?)}";
+			cs=con.prepareCall("Call updateinfo(?,?,?)");
+			cs.setInt(1,id);
+			cs.registerOutParameter(2,Types.VARCHAR);
+			cs.registerOutParameter(3,Types.FLOAT);
+			cs.registerOutParameter(4,Types.INTEGER);
+			cs.registerOutParameter(5,Types.INTEGER);
+			cs.execute();
+				int x=cs.executeUpdate();
+				int a=cs.getInt(2);
+				int b=cs.getInt(3);
+				int sum=cs.getInt(4);
+				int sub=cs.getInt(5);
+				System.out.println(a+"\t"+b+"\t"+sum+"\t"+sub);
+			    }catch(Exception e){
+		    	System.out.println("Error in calling procedure");
+			e.printStackTrace();
+		}finally{
+			JDBCUtil.cleanup(cs,con);
+		}
+	}
+}

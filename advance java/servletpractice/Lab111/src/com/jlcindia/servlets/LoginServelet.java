@@ -1,0 +1,25 @@
+package com.jlcindia.servlets;
+
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+public class LoginServelet extends HttpServlet{
+	protected void service(HttpServletRequest req, HttpServletResponse res)throws ServletException,IOException{
+		
+		//1.Collecting Client Data
+		String unm=req.getParameter("username");
+		String pwd=req.getParameter("password");
+		String msg="";
+		
+		//2.Verifying Client Data
+		if(unm.equals(pwd)){
+			msg="<h1>Login Success<br/>Welcome to jlc home page";
+		}else{
+			msg="<h1>Login Failed</br>Invalid Username or Password";
+		}
+		
+		//3.Preparing the Response
+		Writer out=res.getWriter();
+		out.write(msg);
+	}
+}

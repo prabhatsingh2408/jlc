@@ -1,0 +1,47 @@
+FOR MYSQL
+=========
+
+delimiter $
+create procedure insertStudentinfo(id int,nm varchar(20),fee float)
+begin
+insert into students values(id,nm,fee);
+end;
+$
+delimiter;
+
+
+
+
+FOR ORACLE
+==========
+
+create or replace procedure insertStudentinfo(id in int,nm varchar,fee float) as
+begin
+insert into students values(id,nm,fee);
+end;
+/
+
+
+
+FOR MYSQL
+=========
+
+create table datetest(id int,dop date);
+insert into datetest values(101,'1999-09-09');
+insert into datetest values(102,'2015-09-28');
+insert into datetest values(103,'2010-09-23');
+insert into datetest values(104,'1990-11-11');
+
+
+
+
+FOR ORACLE
+==========
+
+
+
+create table datetest(id int,dop date);
+insert into datetest values(101,'09-jan-1999');
+insert into datetest values(102,'28-sep-2015');
+insert into datetest values(103,'23-sep-2011');
+insert into datetest values(104,'11-nov-1995');

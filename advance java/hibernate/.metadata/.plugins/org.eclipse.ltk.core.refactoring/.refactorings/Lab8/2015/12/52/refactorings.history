@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.jlcindia.hibernate&apos; to &apos;Lab10/src&apos;&#x0D;&#x0A;- Original project: &apos;Lab8&apos;&#x0D;&#x0A;- Destination element: &apos;Lab10/src&apos;&#x0D;&#x0A;- Original element: &apos;Lab8/src/com.jlcindia.hibernate&apos;" description="Copy package" destination="=Lab10/src" element1="/src&lt;com.jlcindia.hibernate" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1451048150148" version="1.0"/>
+</session>

@@ -1,0 +1,23 @@
+package com.jlcindia.spring;
+
+import org.springframework.context.support.*;
+
+public class Lab21 {
+public static void main(String[] args) {
+		
+	AbstractApplicationContext ctx=new ClassPathXmlApplicationContext("jlcindia.xml");
+	
+	/*
+	AbstractApplicationContext ctx=
+	new FileSystemXmlApplicationContext("D:/jlc/advance java/spring/Lab20/src/jlcindia.xml");
+	*/
+	
+	System.out.println("Spring container is ready");
+	System.out.println("--------------------------");
+	Hello hello=(Hello)ctx.getBean("hello");
+	hello.show();
+	System.out.println("---------------------");
+	System.out.println("Spring container is going to shutdown");
+	ctx.registerShutdownHook();
+}
+}

@@ -1,0 +1,35 @@
+package com.jlcindia.hibernate;
+import org.hibernate.*;
+import org.hibernate.criterion.Criterion;
+import org.hibernate.criterion.Restrictions;
+
+import java.util.List;
+import com.jlcindia.hibernate.HibernateUtil;
+
+public class Lab32I {
+public static void main(String[] args) {
+	Transaction tx=null;
+	try{
+		SessionFactory sf = HibernateUtil.getSessionFactory();
+		Session session = sf.openSession();
+	    tx=session.beginTransaction();
+	    
+	    // I) Display All Customers by balance range and city
+	    
+	    String hql="from Customer cust where cust.cardBal between ? and ? and cust.city=?";
+	    Query query=session.createQuery(hql);
+	    query.setDouble(0,21000.0);
+	    query.setDouble(1,45000.0);
+	    query.setString(2,"Blore");
+	    List<Customer>list=query.list();
+	    for(Customer cust:list)
+		System.out.println(cust);
+		tx.commit();
+		session.close();
+	}catch(Exception e)
+	{
+		e.printStackTrace();
+		if(tx!=null)tx.rollback();
+	}
+}
+}

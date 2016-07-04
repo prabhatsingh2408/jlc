@@ -1,0 +1,13 @@
+
+public class Lab1 {
+
+	
+	public static void main(String[] args) {
+		//int a=1;
+		//int rev;
+		for(int a=1;a<=10;a++){
+			System.out.println(a);
+		}
+	}
+
+}

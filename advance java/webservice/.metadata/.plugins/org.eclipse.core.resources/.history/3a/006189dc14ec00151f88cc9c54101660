@@ -1,0 +1,12 @@
+package com.xyz;
+
+import com.jlcindia.jaxws.account.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+		AccountServiceService ass= new AccountServiceService();
+		AccountServiceDelegate asd= ass.getAccountServicePort();
+	}
+
+}

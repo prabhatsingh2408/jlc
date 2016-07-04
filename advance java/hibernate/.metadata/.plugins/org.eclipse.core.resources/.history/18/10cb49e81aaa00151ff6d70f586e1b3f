@@ -1,0 +1,43 @@
+package com.jlcindia.hibernate;
+import org.hibernate.*;
+import com.jlcindia.hibernate.HibernateUtil;
+
+public class Lab11B {
+public static void main(String[] args) {
+	Transaction tx=null;
+	try
+	{
+		//1. Create Session Factory
+		SessionFactory sf= HibernateUtil.getSessionFactory();
+		
+		//2. open session Factory
+		Session session = sf.openSession();
+		
+		//3. Begin Transaction
+		tx=session.beginTransaction();
+		
+		//4. Do your Operation
+		Customer cust=(Customer)session.load(Customer.class, 1);
+		System.out.println(cust.getCid()+"\t"+cust.getFirstName()+"\t"+cust.getLastName()+"\t"+
+		cust.getEmail()+"\t"+cust.getPhone());
+		
+		Address add=cust.getAddress();
+		System.out.println(add.getAid()+"\t"+add.getStreet()+"\t"+add.getCity()+"\t"+add.getState());
+		
+		Address add1=(Address)session.load(Address.class, 1);
+		System.out.println(add.getAid()+"\t"+add.getStreet()+"\t"+add.getCity()+"\t"+add.getState());
+		
+		//5. Commit Transaction
+	    tx.commit();
+	    
+	    //6. Close Session
+	    session.close();
+	}catch(Exception e){
+		e.printStackTrace();
+		
+		//7. Roll Back
+		if(tx!=null)
+			tx.rollback();
+	}
+}
+}

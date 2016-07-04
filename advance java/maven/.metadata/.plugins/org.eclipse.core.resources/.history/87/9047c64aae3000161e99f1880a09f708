@@ -1,0 +1,17 @@
+
+public class Lab1 {
+
+	
+	public static void main(String[] args) {
+		int a=30;
+		if(a==10){
+			System.out.println("Hello");
+		}else if(a==20){
+			System.out.println("Hai");
+		}else{
+			System.out.println("HWWW");
+		}
+
+	}
+
+}

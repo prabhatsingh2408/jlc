@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Currency"/>
+<fullyQualifiedTypeName name="com.jlcindia.jaxws.stock.StockClient"/>
+<fullyQualifiedTypeName name="com.jlcindia.jaxws.accountclient.AccountServiceService"/>
+<fullyQualifiedTypeName name="com.jlcindia.jaxws.accountclient.GetBalResponse"/>
+<fullyQualifiedTypeName name="com.xyz.Test"/>
+<fullyQualifiedTypeName name="com.jlcindia.jaxws.account.AccountServiceService"/>
+<fullyQualifiedTypeName name="com.jlcindia.jaxws.account.AccountServiceDelegate"/>
+</qualifiedTypeNameHistroy>

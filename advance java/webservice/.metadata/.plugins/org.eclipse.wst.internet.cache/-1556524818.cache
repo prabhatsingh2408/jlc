@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.1.3-hudson-390-. --><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://account.jaxws.jlcindia.com/" targetNamespace="http://account.jaxws.jlcindia.com/" version="1.0">
+
+  <xs:element name="deposit" type="tns:deposit"></xs:element>
+
+  <xs:element name="depositResponse" type="tns:depositResponse"></xs:element>
+
+  <xs:element name="getBAl" type="tns:getBAl"></xs:element>
+
+  <xs:element name="getBAlResponse" type="tns:getBAlResponse"></xs:element>
+
+  <xs:element name="withdraw" type="tns:withdraw"></xs:element>
+
+  <xs:element name="withdrawResponse" type="tns:withdrawResponse"></xs:element>
+
+  <xs:complexType name="getBAl">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getBAlResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="withdraw">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"></xs:element>
+      <xs:element name="arg1" type="xs:double"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="withdrawResponse">
+    <xs:sequence></xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deposit">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"></xs:element>
+      <xs:element name="arg1" type="xs:double"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="depositResponse">
+    <xs:sequence></xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jlc PUBLIC "-//Java Learning Center//DTD 
+                        JLCapp 1.0//EN" "jlc.dtd">
+<jlc>
+<student sid="11" job="yes">
+<sname>prabhat</sname>
+<email>
+<oemail>prabhat@gmail</oemail>
+<pmail>prabhat@gmail</pmail>
+</email>
+</student>
+<student sid="12" job="no">
+<sname>rama</sname>
+<email>
+<oemail>rama@gmail</oemail>
+<pmail>rama@gmail</pmail>
+</email>
+</student>
+<course cid="101" free="yes">
+<cname>XML</cname>
+<cost>500</cost>
+<faculty>&f1</faculty>
+</course>
+<course cid="102" >
+<cname>Web Services</cname>
+<cost>4500</cost>
+<faculty>&f1</faculty>
+</course>
+</jlc>

@@ -1,0 +1,7 @@
+INDEX VERSION 1.126
+D:\jlc\advance java\webservice\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\480082256.index
+\Lab1\src
+D:\jlc\advance java\webservice\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\621823381.index
+\Lab2\src
+D:\jlc\advance java\webservice\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3830365413.index
+\Lab22\src

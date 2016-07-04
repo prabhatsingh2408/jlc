@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.jlcindia.listner&apos; to &apos;com.jlcindia.listener&apos;&#x0D;&#x0A;- Original project: &apos;Lab21&apos;&#x0D;&#x0A;- Original element: &apos;Lab21/src/com.jlcindia.listner&apos;&#x0D;&#x0A;- Renamed element: &apos;Lab21/src/com.jlcindia.listener&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.jlcindia.listner&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.jlcindia.listner" name="com.jlcindia.listener" qualified="false" references="true" stamp="1448877231358" textual="false" version="1.0"/>
+</session>

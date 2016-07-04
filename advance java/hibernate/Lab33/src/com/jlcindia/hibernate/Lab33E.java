@@ -1,0 +1,30 @@
+package com.jlcindia.hibernate;
+import org.hibernate.*;
+import org.hibernate.criterion.Restrictions;
+
+import java.util.List;
+import com.jlcindia.hibernate.HibernateUtil;
+
+public class Lab33E {
+public static void main(String[] args) {
+	Transaction tx=null;
+	try{
+		SessionFactory sf = HibernateUtil.getSessionFactory();
+		Session session = sf.openSession();
+	    tx=session.beginTransaction();
+	    
+	    // E) Display All Customers by email
+	    
+	    Criteria ct=session.createCriteria(Customer.class);
+        ct.add(Restrictions.eq("email","tt@gmail.com"));
+	    Customer cust=(Customer)ct.uniqueResult();
+		System.out.println(cust);
+		tx.commit();
+		session.close();
+	}catch(Exception e)
+	{
+		e.printStackTrace();
+		if(tx!=null)tx.rollback();
+	}
+}
+}

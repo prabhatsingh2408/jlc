@@ -1,0 +1,17 @@
+import java.io.*;
+
+public class Lab872 {
+public static void main(String[] args) {
+		try(FileInputStream fis=new FileInputStream("D:\\jlc\\abc.txt");
+				InputStreamReader isr=new InputStreamReader(fis);
+				){
+		while(true){
+			int id=isr.read();
+			if(id==null)break;
+			System.out.println(id);
+		}
+	}catch(Exception e){
+	e.printStackTrace();
+	}
+}
+}

@@ -1,0 +1,4 @@
+2015-08-27 01:03:41,004 [Start Help Server] INFO  org.mortbay.log - Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2015-08-27 01:03:45,556 [Start Help Server] INFO  org.mortbay.log - jetty-6.1.x
+2015-08-27 01:03:45,619 [Start Help Server] INFO  org.mortbay.log - Started SelectChannelConnector@127.0.0.1:55653
+2015-08-27 01:03:48,702 [Worker-65] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
